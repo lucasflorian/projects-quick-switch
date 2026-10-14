@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.4.3
+
+- README: screenshots of the project picker (English and French).
+
 ## 0.4.2
 
 - README: clearer presentation and installation instructions.
