@@ -1,8 +1,28 @@
-# Projects Quick Switch
+<p align="center">
+	<img src="media/icon.png" width="128" alt="Projects Quick Switch icon">
+</p>
 
-Switch between projects in a flash, PhpStorm style. A fast, keyboard-first alternative to project manager extensions.
+<h1 align="center">Projects Quick Switch</h1>
 
-**[Version française plus bas](#français)**
+<p align="center">
+	<strong>A Visual Studio Code extension to switch between projects in a flash, PhpStorm style.</strong><br>
+	A fast, keyboard-first alternative to project manager extensions.
+</p>
+
+<p align="center">
+	<a href="https://marketplace.visualstudio.com/items?itemName=florian-lucas.projects-quick-switch"><img src="https://img.shields.io/badge/VS%20Code-Marketplace-007ACC?logo=visualstudiocode&logoColor=white" alt="VS Code Marketplace"></a>
+	<a href="https://github.com/lucasflorian/projects-quick-switch/releases/latest"><img src="https://img.shields.io/github/v/release/lucasflorian/projects-quick-switch?label=release" alt="Latest release"></a>
+	<a href="LICENSE.txt"><img src="https://img.shields.io/badge/license-MIT-green" alt="MIT license"></a>
+</p>
+
+<p align="center"><a href="#français">Version française plus bas</a></p>
+
+## Installation
+
+- **From VS Code**: open the Extensions view (`⇧⌘X` / `Ctrl+Shift+X`), search for **Projects Quick Switch** and click *Install*.
+- **From the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=florian-lucas.projects-quick-switch)**: click *Install*.
+- **From the command line**: `code --install-extension florian-lucas.projects-quick-switch`
+- **Offline**: download the `.vsix` from the [latest release](https://github.com/lucasflorian/projects-quick-switch/releases/latest), then `code --install-extension projects-quick-switch-<version>.vsix`.
 
 ## Features
 
@@ -72,7 +92,14 @@ The status bar icon comes from `media/icon-font.woff`, generated from `media/ico
 
 ## Français
 
-Passez d'un projet à l'autre en un éclair, façon PhpStorm. Une alternative rapide et pensée pour le clavier aux extensions de gestion de projets.
+**Extension Visual Studio Code** pour passer d'un projet à l'autre en un éclair, façon PhpStorm. Une alternative rapide et pensée pour le clavier aux extensions de gestion de projets.
+
+### Installation
+
+- **Depuis VS Code** : ouvrez la vue Extensions (`⇧⌘X` / `Ctrl+Shift+X`), cherchez **Projects Quick Switch** et cliquez sur *Install*.
+- **Depuis le [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=florian-lucas.projects-quick-switch)** : cliquez sur *Install*.
+- **En ligne de commande** : `code --install-extension florian-lucas.projects-quick-switch`
+- **Hors ligne** : téléchargez le `.vsix` de la [dernière release](https://github.com/lucasflorian/projects-quick-switch/releases/latest), puis `code --install-extension projects-quick-switch-<version>.vsix`.
 
 ### Fonctions
 
