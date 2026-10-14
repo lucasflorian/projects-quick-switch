@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.4.2
+
+- README: clearer presentation and installation instructions.
+
 ## 0.4.1
 
 - Source code published on GitHub.
