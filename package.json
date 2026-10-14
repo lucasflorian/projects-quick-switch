@@ -1,0 +1,193 @@
+{
+	"name": "projects-quick-switch",
+	"displayName": "Projects Quick Switch",
+	"description": "%description%",
+	"version": "0.4.1",
+	"publisher": "florian-lucas",
+	"author": {
+		"name": "Florian Lucas",
+		"url": "https://florian-lucas.fr"
+	},
+	"homepage": "https://github.com/lucasflorian/projects-quick-switch#readme",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/lucasflorian/projects-quick-switch.git"
+	},
+	"bugs": {
+		"url": "https://github.com/lucasflorian/projects-quick-switch/issues"
+	},
+	"license": "MIT",
+	"icon": "media/icon.png",
+	"galleryBanner": {
+		"color": "#3B4FE0",
+		"theme": "dark"
+	},
+	"engines": {
+		"vscode": "^1.90.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"keywords": [
+		"project",
+		"projects",
+		"switcher",
+		"recent",
+		"workspace",
+		"phpstorm",
+		"recent projects",
+		"project manager",
+		"favorites"
+	],
+	"main": "./src/extension.js",
+	"activationEvents": [
+		"onStartupFinished"
+	],
+	"scripts": {
+		"package": "npx @vscode/vsce package --out releases/"
+	},
+	"contributes": {
+		"configuration": {
+			"title": "Projects Quick Switch",
+			"properties": {
+				"projectSwitcher.openInNewWindow": {
+					"type": "boolean",
+					"default": true,
+					"markdownDescription": "%config.openInNewWindow%"
+				},
+				"projectSwitcher.reuseEmptyWindow": {
+					"type": "boolean",
+					"default": true,
+					"description": "%config.reuseEmptyWindow%"
+				},
+				"projectSwitcher.pathDisplay": {
+					"type": "string",
+					"enum": [
+						"parentPath",
+						"parentPathBelow",
+						"parentName",
+						"parentNameBelow",
+						"none"
+					],
+					"enumDescriptions": [
+						"%config.pathDisplay.parentPath%",
+						"%config.pathDisplay.parentPathBelow%",
+						"%config.pathDisplay.parentName%",
+						"%config.pathDisplay.parentNameBelow%",
+						"%config.pathDisplay.none%"
+					],
+					"default": "parentPath",
+					"description": "%config.pathDisplay%"
+				},
+				"projectSwitcher.recentLimit": {
+					"type": "number",
+					"default": 10,
+					"minimum": 0,
+					"description": "%config.recentLimit%"
+				},
+				"projectSwitcher.showOtherProjects": {
+					"type": "boolean",
+					"default": false,
+					"description": "%config.showOtherProjects%"
+				},
+				"projectSwitcher.scanFolders": {
+					"type": "array",
+					"items": {
+						"type": "string"
+					},
+					"default": [],
+					"markdownDescription": "%config.scanFolders%"
+				},
+				"projectSwitcher.scanDepth": {
+					"type": "number",
+					"default": 2,
+					"minimum": 0,
+					"maximum": 6,
+					"description": "%config.scanDepth%"
+				},
+				"projectSwitcher.scanMarkers": {
+					"type": "array",
+					"items": {
+						"type": "string"
+					},
+					"default": [
+						".git",
+						".idea",
+						".vscode",
+						"composer.json",
+						"package.json"
+					],
+					"description": "%config.scanMarkers%"
+				},
+				"projectSwitcher.showInStatusBar": {
+					"type": "boolean",
+					"default": true,
+					"description": "%config.showInStatusBar%"
+				},
+				"projectSwitcher.showInEditorTitle": {
+					"type": "boolean",
+					"default": true,
+					"description": "%config.showInEditorTitle%"
+				}
+			}
+		},
+		"icons": {
+			"projects-quick-switch-logo": {
+				"description": "Projects Quick Switch",
+				"default": {
+					"fontPath": "media/icon-font.woff",
+					"fontCharacter": "\\E000"
+				}
+			}
+		},
+		"commands": [
+			{
+				"command": "projectSwitcher.open",
+				"title": "%command.open%",
+				"category": "%command.category%",
+				"icon": "$(projects-quick-switch-logo)"
+			},
+			{
+				"command": "projectSwitcher.addFolder",
+				"title": "%command.addFolder%",
+				"category": "%command.category%"
+			},
+			{
+				"command": "projectSwitcher.pinCurrent",
+				"title": "%command.pinCurrent%",
+				"category": "%command.category%"
+			},
+			{
+				"command": "projectSwitcher.importProjectManager",
+				"title": "%command.importProjectManager%",
+				"category": "%command.category%"
+			},
+			{
+				"command": "projectSwitcher.rescan",
+				"title": "%command.rescan%",
+				"category": "%command.category%"
+			},
+			{
+				"command": "projectSwitcher.configureShortcut",
+				"title": "%command.configureShortcut%",
+				"category": "%command.category%"
+			}
+		],
+		"keybindings": [
+			{
+				"command": "projectSwitcher.open",
+				"key": "alt+r"
+			}
+		],
+		"menus": {
+			"editor/title": [
+				{
+					"command": "projectSwitcher.open",
+					"when": "config.projectSwitcher.showInEditorTitle",
+					"group": "navigation@-100"
+				}
+			]
+		}
+	},
+	"l10n": "./l10n"
+}

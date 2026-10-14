@@ -1,0 +1,5 @@
+releases/**
+.gitignore
+scripts/**
+media/icon.svg
+media/icon-outline.svg
