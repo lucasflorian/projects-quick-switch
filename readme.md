@@ -17,6 +17,10 @@
 
 <p align="center"><a href="#français">Version française plus bas</a></p>
 
+<p align="center">
+	<img src="media/screenshot.png" width="600" alt="Projects Quick Switch picker: recent projects, then favorites">
+</p>
+
 ## Installation
 
 - **From VS Code**: open the Extensions view (`⇧⌘X` / `Ctrl+Shift+X`), search for **Projects Quick Switch** and click *Install*.
@@ -93,6 +97,10 @@ The status bar icon comes from `media/icon-font.woff`, generated from `media/ico
 ## Français
 
 **Extension Visual Studio Code** pour passer d'un projet à l'autre en un éclair, façon PhpStorm. Une alternative rapide et pensée pour le clavier aux extensions de gestion de projets.
+
+<p align="center">
+	<img src="media/screenshot-fr.png" width="600" alt="Sélecteur de projets : projets récents, puis favoris">
+</p>
 
 ### Installation
 
